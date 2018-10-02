@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 const productSchema = new Schema({
   status: {
+    type:String,
     enum: ["Finished", "Available"],
     default: "Available",
     required: true
